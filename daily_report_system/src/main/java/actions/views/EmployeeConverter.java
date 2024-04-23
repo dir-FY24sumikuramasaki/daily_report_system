@@ -15,7 +15,7 @@ public class EmployeeConverter {
 
     /**
      * ViewモデルのインスタンスからDTOモデルのインスタンスを作成する
-     * @param ev EmployeeViewのインスタンス
+     * @param  EmployeeViewのインスタンス
      * @return Employeeのインスタンス
      */
     public static Employee toModel(EmployeeView ev) {
@@ -87,7 +87,7 @@ public class EmployeeConverter {
     /**
      * Viewモデルの全フィールドの内容をDTOモデルのフィールドにコピーする
      * @param e DTOモデル(コピー先)
-     * @param ev Viewモデル(コピー元)
+     * @paramViewモデル(コピー元)
      */
     public static void copyViewToModel(Employee e, EmployeeView ev) {
         e.setId(ev.getId());
